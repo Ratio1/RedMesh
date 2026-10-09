@@ -27,6 +27,7 @@ The first release for partners. Partners receive it as a download from their Red
 - **Content:** the question sets and the Knowledge Base, with a legal basis as of 2026-10-08.
 - **Knowledge Base:** reference entries for security tools and standards, with a filter.
 - **Windows:** the programs are signed by NAEURAL SRL.
+- **Public checksums:** the SHA-256 of every published program is listed in this repository, with a one-command check for each system.
 
 ## 0.4.4 (2026-10-01)
 
