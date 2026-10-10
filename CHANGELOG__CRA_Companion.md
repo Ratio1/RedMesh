@@ -7,9 +7,9 @@ RedMesh CRA Companion is a desktop application for readiness self-assessments un
 - To check a downloaded program, compare its SHA-256 with the values in [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md).
 - Contact: redmesh@ratio1.ai
 
-## Unreleased: 0.5.1
+## 0.5.1 (2026-10-10)
 
-The first release for partners. Partners receive it as a download from their RedMesh Navigator account.
+The first release for partners. Partners receive it as a download from their RedMesh Navigator account. A macOS build for Apple Silicon (M1 and later) follows for testers, not yet signed by Apple.
 
 - **Product sources:** each product version records where its software is: a folder, a file or a git address.
   - Folders, files and archives are scanned for a software bill of materials (SBOM) automatically.
@@ -27,6 +27,7 @@ The first release for partners. Partners receive it as a download from their Red
 - **Content:** the question sets and the Knowledge Base, with a legal basis as of 2026-10-08.
 - **Knowledge Base:** reference entries for security tools and standards, with a filter.
 - **Windows:** the programs are signed by NAEURAL SRL.
+- **Self-check at every start:** the program compares its own SHA-256 with the public list in this repository. It stops on a mismatch, and when it cannot check it shows a warning and counts the start.
 - **Public checksums:** the SHA-256 of every published program is listed in this repository, with a one-command check for each system.
 
 ## 0.4.4 (2026-10-01)

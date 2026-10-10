@@ -21,4 +21,14 @@ If a value does not match, do not run the program. Contact redmesh@ratio1.ai.
 
 ## Releases
 
-No release is listed yet. The first entry comes with release 0.5.1.
+### 0.5.1
+
+| File | System | SHA-256 |
+|---|---|---|
+| `windows-x64/redmeshcra-gui.exe` | Windows x64 | `7a710b9529c32668790b4471ce4562f846226733b78268d19ed1a3b5aec0d39b` |
+| `windows-x64/redmeshcra.exe` | Windows x64 | `c526ccab5e96d72bc9959b9e2ae70d7b5fde007ca432676455623d539ced712a` |
+| `linux-x64/redmeshcra` | Linux x64 and WSL2 | `b4e38f67a6eab7cb9c1b5407210749a220b38b954c65ae78dde00860f2abd6c3` |
+
+For `sha256sum -c`: [checksums/cra-companion/v0.5.1.sha256](checksums/cra-companion/v0.5.1.sha256)
+
+The macOS (Apple Silicon) programs of 0.5.1 are added here once their build is checked.
