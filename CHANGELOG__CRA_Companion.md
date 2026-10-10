@@ -9,7 +9,7 @@ RedMesh CRA Companion is a desktop application for readiness self-assessments un
 
 ## 0.5.1 (2026-10-10)
 
-The first release for partners. Partners receive it as a download from their RedMesh Navigator account. A macOS build for Apple Silicon (M1 and later) follows for testers, not yet signed by Apple.
+The first release for partners. Partners receive it as a download from their RedMesh Navigator account. A macOS build for Apple Silicon (M1 and later) is available to testers. It is not yet signed by Apple, and it fixes a macOS-only layout loop in the assessment wizard.
 
 - **Product sources:** each product version records where its software is: a folder, a file or a git address.
   - Folders, files and archives are scanned for a software bill of materials (SBOM) automatically.
