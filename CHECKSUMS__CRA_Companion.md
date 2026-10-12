@@ -28,9 +28,9 @@ If a value does not match, do not run the program. Contact redmesh@ratio1.ai.
 | `windows-x64/redmeshcra-gui.exe` | Windows x64 | `7a710b9529c32668790b4471ce4562f846226733b78268d19ed1a3b5aec0d39b` |
 | `windows-x64/redmeshcra.exe` | Windows x64 | `c526ccab5e96d72bc9959b9e2ae70d7b5fde007ca432676455623d539ced712a` |
 | `linux-x64/redmeshcra` | Linux x64 and WSL2 | `b4e38f67a6eab7cb9c1b5407210749a220b38b954c65ae78dde00860f2abd6c3` |
-| `macos-arm64/RedMesh CRA Companion.app/Contents/MacOS/redmeshcra` | macOS on Apple silicon | `36f961c36dd51770b0cf543ba48da979915260963f53e66ad2fadfd11d075a65` |
-| `macos-arm64/redmeshcra` | macOS on Apple silicon | `ed5b0bf0226b4e06b11a059d240c2dd76c7f7a34b985ff389c06724eb816a61e` |
+| `macos-arm64/RedMesh CRA Companion.app/Contents/MacOS/redmeshcra` | macOS on Apple silicon | `979958bcaec61557b6ad234de6c59e95644d998af114c7842056562e76c08482` |
+| `macos-arm64/redmeshcra` | macOS on Apple silicon | `ec718e69d50bd3087b811d1967b5860b4592c0a1d4c58d3efc601c1343742d7d` |
 
 For `sha256sum -c`: [checksums/cra-companion/v0.5.1.sha256](checksums/cra-companion/v0.5.1.sha256)
 
-The macOS programs (Apple Silicon, M1 and later) are a build for testers. It is ad-hoc signed only, not yet signed or notarized by Apple, and comes from commit 6596274: 0.5.1 plus a macOS layout fix.
+The macOS programs (Apple Silicon, M1 and later) are a build for testers. It is ad-hoc signed only, not yet signed or notarized by Apple, and comes from commit 4d3686b: 0.5.1 plus two macOS fixes, a layout loop and a crash at start. It replaces the first macOS build of 2026-10-10 (commit 6596274), which closed at start.
