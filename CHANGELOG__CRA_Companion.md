@@ -7,13 +7,13 @@ RedMesh CRA Companion is a desktop application for readiness self-assessments un
 - To check a downloaded program, compare its SHA-256 with the values in [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md).
 - Contact: redmesh@ratio1.ai
 
-## Unreleased (0.5.2)
+## Unreleased (0.5.3)
 
-0.5.1 with the macOS fixes, built from one commit for Linux, Windows and macOS (Apple Silicon).
+0.5.1 with the macOS fixes, built from one commit for Linux, Windows and macOS (Apple Silicon). There is no 0.5.2 release: that version was built and not released.
 
 - **macOS:** the application starts. The first macOS build of 0.5.1 closed at start. Each release's application is now started on macOS 15 and macOS 27 before it is published.
 - **Drop-down lists** keep their width on every system.
-- **One version per build:** from 0.5.2 on, every new build gets a new version on all three systems, and a published version never changes. The checksums of each version stay as published.
+- **One version per build:** from 0.5.3 on, every new build gets a new version on all three systems, and a published version never changes. The checksums of each version stay as published.
 
 ## 0.5.1 (2026-10-10)
 
