@@ -13,7 +13,7 @@ Run the command for your system in the folder that holds the program, then compa
 | Linux and WSL2 | `sha256sum redmeshcra` |
 | macOS | `shasum -a 256 "RedMesh CRA Companion.app/Contents/MacOS/redmeshcra"` |
 
-To check every program at once on Linux, WSL2 or macOS, save the release's file from `checksums/cra-companion/` in the folder where you extracted the release archive (its names start with `windows-x64/`, `linux-x64/` or `macos-arm64/`) and run `sha256sum -c v<version>.sha256` (Linux, WSL2) or `shasum -a 256 -c v<version>.sha256` (macOS) there.
+To check every program at once on Linux, WSL2 or macOS, save the release's file from `checksums/cra-companion/` in the folder where you extracted the release archive (its names start with `windows-x64/`, `linux-x64/` or `macos-arm64/`) and run `sha256sum -c --ignore-missing v<version>.sha256` (Linux, WSL2) or `shasum -a 256 -c --ignore-missing v<version>.sha256` (macOS) there. The list names the programs of every system; `--ignore-missing` skips those that are not in your archive. Each program of your archive must show `OK`.
 
 The Windows programs are also signed by NAEURAL SRL. In File Explorer, open Properties > Digital Signatures: the signer must be "Naeural SRL". The macOS application will be signed and notarized with NAEURAL SRL's Apple Developer ID once that is in place; until then, macOS builds are given only to testers who agreed to use them unsigned.
 
