@@ -21,6 +21,20 @@ If a value does not match, do not run the program. Contact redmesh@ratio1.ai.
 
 ## Releases
 
+### 0.5.4
+
+| File | System | SHA-256 |
+|---|---|---|
+| `windows-x64/redmeshcra-gui.exe` | Windows x64 | `e3d381dd92a78d6e502f12f6a656e1dd845409f4d76f0901c00cfd18f77d8a38` |
+| `windows-x64/redmeshcra.exe` | Windows x64 | `d3863ae48d849dec8cad289bac8d836041da5b338b1294a04863ff5bcdc34e96` |
+| `linux-x64/redmeshcra` | Linux x64 and WSL2 | `9def5c98d50faf29e6f71ad00089c353c96c23e582d7691bb8edb8704f446266` |
+| `macos-arm64/RedMesh CRA Companion.app/Contents/MacOS/redmeshcra` | macOS on Apple silicon | `451211a203e8f8e1be3e59e6ae7c0cd01664873824351ac4933da7c7d554073a` |
+| `macos-arm64/redmeshcra` | macOS on Apple silicon | `02aedfc79bd7aa1428256ec09b90e4bc377e77d2f68af40c3f614c04b659953f` |
+
+For `sha256sum -c`: [checksums/cra-companion/v0.5.4.sha256](checksums/cra-companion/v0.5.4.sha256)
+
+The macOS programs (Apple Silicon, M1 and later) are ad-hoc signed only, not yet signed or notarized by Apple. 0.5.4 is one build for all three systems, from commit 63b5755.
+
 ### 0.5.3
 
 | File | System | SHA-256 |

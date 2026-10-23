@@ -7,6 +7,17 @@ RedMesh CRA Companion is a desktop application for readiness self-assessments un
 - To check a downloaded program, compare its SHA-256 with the values in [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md).
 - Contact: redmesh@ratio1.ai
 
+## 0.5.4 (2026-10-23)
+
+One build for Linux, Windows and macOS (Apple Silicon).
+
+- **Draft reports:** the Companion makes drafts of the readiness report and of the Executive summary, marked "DRAFT" on every page. The full report is produced in the partner's own RedMesh Navigator from the uploaded Assessment JSON and its hash file.
+- **Partner key:** with the partner's key imported in Settings, the Assessment JSON and the drafts each get a `_signature.json` file that RedMesh Navigator checks. Without a key they are written as before, and the result says "Not signed".
+- **Content:** question sets 2026.10.6 and Knowledge Base 2026.10.12, with a legal basis as of 2026-10-23, to be reviewed by 2026-11-27. A Draft made with an older question set can move to the new one with "Update question set".
+- **Security fixes** from NAEURAL SRL's security reviews: archives used as product sources, limits on large or hostile files, the privacy of the optional known-issue lookup, and library loading on Windows.
+- **Delivery:** the release files can be handed over as a download or on a drive. The application works offline; it uses the internet when it is available, for its start-up check and the optional known-issue lookups.
+- **macOS:** signed ad hoc with the hardened runtime, and started on macOS 14, 15, 26 and 27 before it was published.
+
 ## 0.5.3 (2026-10-13)
 
 0.5.1 with the macOS fixes, built from one commit for Linux, Windows and macOS (Apple Silicon). There is no 0.5.2 release: that version was built and not released.
