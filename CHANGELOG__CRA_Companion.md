@@ -7,6 +7,24 @@ RedMesh CRA Companion is a desktop application for readiness self-assessments un
 - To check a downloaded program, compare its SHA-256 with the values in [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md).
 - Contact: redmesh@ratio1.ai
 
+## 1.0.2 (2026-10-30)
+
+The release after 0.5.4: the version numbers continue with 1.0.2, 1.0.3 and on, one version per build. There is no 1.0.1 release: that version was built and not released, and 1.0.2 is that build with two fixes: one test, and the dialog that attaches a code scan to a Draft on macOS. One build for Linux, Windows and macOS (Apple Silicon).
+
+- **New data format:** what 1.0.2 saves cannot be used by 0.5.4 or earlier. Before its first save on a data folder of an earlier version, 1.0.2 asks, so that the folder can be copied first; a way back is 0.5.4 with that copy. The partner key file is not in that copy, and 0.5.4 reads only key files without a licence: keep the key file that 0.5.4 used before a key file with a licence is imported, and import it again in 0.5.4 after going back.
+- **Scan limits:** every scan has limits of time (30 minutes), memory, bytes read, files and folder depth. A scan that a limit stopped or cut short is marked "partial" with the reason and what its results cover, and is never shown as complete.
+- **SBOM scans, reviewed and improved:**
+  - each component states how its version is known: from a lock file, an installed package or a built file, or only from a manifest;
+  - dependency links appear only where a manifest or a lock file shows them, and more lock-file layouts are read;
+  - packages that it recognises as taken from git or from a registry other than the public one are listed, but not sent to the optional known-issue lookup, whose confirmation lists every identifier it sends;
+  - login details written in a package address are kept out of the SBOM.
+- **Code scans, reviewed and improved:** configuration files are read by their layout, more forms of secrets are masked (passwords on command lines and default values after an environment lookup too), and each scan states the rules it ran and the files it did not read. Code scans recorded by earlier versions should be run again before an assessment is finalised.
+- **Code analysis:** a second tab of the SBOM Analyzer runs the code scan on a folder without an assessment, keeps its runs, runs them again, exports their SARIF files and can attach a run to a Draft.
+- **Licence in the partner key:** NAEURAL SRL can issue a partner's key file with a licence that names its key. The application checks it offline at every start and shows "Licensed until <date>". A key without a licence keeps signing as before. A licence that has ended gives a warning, and work continues.
+- **Checks:** Settings, Checks and `redmeshcra --check` check the partner key, its licence and the computer's set-up, each with what to do. No check stops work, except that a program file whose SHA-256 differs from the public list opens no data, as since 0.5.1, and that on Linux and macOS a data folder that other accounts can open, or whose `.redmesh` folder they can change, is used read-only until it is restricted, as before.
+- **Online when available:** the application works offline. When a connection is available, it uses it for its start-up check against [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md), the optional known-issue lookups and, with a partner key that holds a licence, NAEURAL SRL's public list of withdrawn keys in this repository (`keys/cra-companion/withdrawn-keys.json`). The start-up check and that request carry no partner, key or customer information, and the known-issue lookups send a scan's package identifiers only after the user confirms them; without a connection the list is shown as not checked.
+- **Content:** question sets 2026.10.6, unchanged, and Knowledge Base 2026.10.13, whose entry on what leaves the computer now also names the licence check and what it sends; legal basis as of 2026-10-23, to be reviewed by 2026-11-27. Content not legally reviewed.
+
 ## 0.5.4 (2026-10-23)
 
 One build for Linux, Windows and macOS (Apple Silicon).

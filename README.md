@@ -5,7 +5,7 @@ The public repo of RedMesh ecosystem
 
 - `CHANGELOG__<App>.md`: the public changelog of each RedMesh application, for example [CHANGELOG__CRA_Companion.md](CHANGELOG__CRA_Companion.md).
 - `CHECKSUMS__<App>.md` and `checksums/<app>/`: the SHA-256 of every published program, and how to check a download, for example [CHECKSUMS__CRA_Companion.md](CHECKSUMS__CRA_Companion.md).
-- `keys/`: public keys for verifying signed files, when an application uses them.
+- `keys/<app>/`: public keys for verifying signed files, and signed lists, when an application uses them, for example [keys/cra-companion/](keys/cra-companion/README.md): NAEURAL SRL's licence public key and the list of withdrawn partner keys of RedMesh CRA Companion.
 - `downloads/`: publicly downloadable releases, when an application has them.
 
 Contact: redmesh@ratio1.ai
